@@ -37,7 +37,7 @@
 </template>
 
 <script>
-import BaseAppIcon from '@/components/BaseAppIcon.vue';
+import BaseAppIcon from '@/components/BaseAppIcon/BaseAppIcon.vue';
 import BaseTipCard from '@/components/BaseTipCard/BaseTipCard.vue';
 import BaseTipCardMobile from '@/components/BaseTipCardMobile/BaseTipCardMobile.vue';
 
