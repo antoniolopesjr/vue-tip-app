@@ -7,13 +7,12 @@ const formatValueToUSD = (value) => new Intl.NumberFormat('en-US', {
 /**
  * Given a value, format it to USD pattern.
  * @param input - The value that the user entered in the input field.
- * @returns The value of the input, formatted to BRL.
+ * @returns The value of the input, formatted to USD.
  */
 function formatValue(input) {
   let output = 0;
 
   output = formatValueToUSD(input);
-  // console.log(input, output);
 
   return output;
 }
