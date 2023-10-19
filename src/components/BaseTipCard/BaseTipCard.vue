@@ -115,7 +115,7 @@
   </v-card>
 </template>
 <script>
-import FormatValueToBrl from '@/utils/formatValueToBrl';
+import FormatValueToBrl from '@/utils/formatValueToBrl.ts';
 import FormatValueToUsd from '@/utils/formatValueToUsd';
 
 export default {

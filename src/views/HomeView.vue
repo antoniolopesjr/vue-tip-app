@@ -6,8 +6,11 @@
         <v-avatar>
           <BaseAppIcon />
         </v-avatar>
-        <v-btn variant="text">
+        <v-btn variant="text" @click="$router.push({name: 'home'})">
           Vue Le/Tip App
+        </v-btn>
+        <v-btn variant="text" @click="$router.push({name: 'rota2'})">
+          Rota 2
         </v-btn>
       </v-container>
     </v-app-bar>
@@ -80,9 +83,10 @@ export default {
     getActualCurrency() {
       try {
         fetch.post('https://swop.cx/graphql', data).then((result) => {
+          console.log(result.data);
           const res = result.data.data.latest;
-          this.euroValue = res[0].quote;
-          this.dollarValue = this.euroValue / res[1].quote;
+          this.euroValue = res[0]?.quote;
+          this.dollarValue = 1.035;
           this.loading = false;
         });
       } catch (error) {
